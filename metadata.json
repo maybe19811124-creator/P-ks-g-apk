@@ -1,0 +1,5 @@
+{
+  "name": "Tamás sütemény kalkulátora",
+  "description": "Sütőipari recept kalkulátor százalékos arányok alapján. Speciális támogatás kifli és zsemle présekhez.",
+  "requestFramePermissions": []
+}
