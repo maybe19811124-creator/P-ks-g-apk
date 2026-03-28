@@ -1,8 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, Calculator, ChevronRight, Info, Scale, Package, Layers, Hash, Printer, Download } from 'lucide-react';
+import { Search, Calculator, ChevronRight, Info, Scale, Package, Layers, Hash, Printer, Download, Sparkles } from 'lucide-react';
 import { RECIPES } from './constants/recipes';
 import { Recipe, UnitType } from './types';
+import { AiAssistant } from './components/AiAssistant';
 
 export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -455,6 +456,8 @@ export default function App() {
           </div>
         </main>
       </div>
+
+      {selectedRecipe && <AiAssistant recipeName={selectedRecipe.name} />}
 
       <style dangerouslySetInnerHTML={{ __html: `
         @media print {
